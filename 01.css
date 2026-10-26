@@ -3,3 +3,44 @@
     PADDING: 0;
     BOX-SIZING: border-box;
 }
+
+a1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+a2{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 110px;
+}
+a3{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 220px;
+}
+a4{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    top: 0;
+    left: 330px;
+}
+a5{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    position: absolute;
+    top: 0;
+    left: 440px;
+}
