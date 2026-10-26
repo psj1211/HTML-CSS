@@ -2,45 +2,57 @@
     MARGIN: 0;
     PADDING: 0;
     BOX-SIZING: border-box;
+    transition: 0.5s;
 }
 
-a1{
+.box{
+    position: relative;
+    display: flex;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.A{
+    width: 100px;
+    height: 100px;
+}
+
+.a1{
     width: 100px;
     height: 100px;
     background-color: red;
-    position: absolute;
-    top: 0;
-    left: 0;
+    transition: 0.5s;
 }
-a2{
+
+.a2{
     width: 100px;
     height: 100px;
     background-color: blue;
-    position: absolute;
-    top: 0;
-    left: 110px;
+
 }
-a3{
+.a3{
     width: 100px;
     height: 100px;
     background-color: green;
-    position: absolute;
-    top: 0;
-    left: 220px;
+    
 }
-a4{
+.a4{
     width: 100px;
     height: 100px;
     background-color: yellow;
-    position: absolute;
-    top: 0;
-    left: 330px;
+    
 }
-a5{
+.a5{
     width: 100px;
     height: 100px;
     background-color: purple;
-    position: absolute;
-    top: 0;
-    left: 440px;
+}
+.b:hover{
+    background-color: black;
+    color: white;
 }
