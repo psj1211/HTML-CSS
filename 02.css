@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.head{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#a1{
+    color: gray;
+    cursor: pointer;
+}
+
+#a2{
+    color: gray;
+    cursor: pointer;
+}
+
+#a3{
+    color: gray;
+    cursor: pointer;
+}
+
+#a1.active{
+    font-size: 1.7em;
+    color: black;
+}
+
+#a2.active{
+    font-size: 1.7em;
+    color: black;
+}
+
+#a3.active{
+    font-size: 1.7em;
+    color: black;
+}
+
+.prong{
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    color: rgb(187, 187, 187);
+}
+
+.sub-prong{
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+#b1{
+    width: 40px;
+    height: 100%;
+    background-color: #00DC64;
+    JUSTIFY-CONTENT: center;
+    display: flex;
+    align-items: center;
+    color :white;
+}
+
+#b2, #b3{
+    width: 40px;
+    height: 100%;
+    JUSTIFY-CONTENT: center;
+    display: flex;
+    align-items: center;
+}
+
+#b4, #b5{
+    width: 80px;
+    height: 100%;
+    JUSTIFY-CONTENT: center;
+    display: flex;
+    align-items: center;
+}
