@@ -114,8 +114,8 @@ hr{
 .todaycomic{
     display: flex;
     gap : 10px;
-    margin: 20px 0px 10px 0px;
-    
+    margin: 15px 0px 15px 0px;
+    align-items: center;
 }
 
 #c1{
