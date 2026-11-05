@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>네이버웹툰</title>
-    <link rel="stylesheet" href="02.css">
+    <link rel="stylesheet" href="navercomic.css">
 </head>
 <body>
     <div class="top">
         <div class="head">
             <div class="prong">
                 <h3 id="a1">네이버웹툰</h3>
-                |
+                <span>|</span>
                 <h3 id="a2">웹소설</h3>
-                |
+                <span>|</span>
                 <h3 id="a3">시리즈</h3>
             </div>
         </div>
@@ -33,52 +33,50 @@
     <hr>
     <div class="bottom">
         <div class="todaycomic">
-            <span id="c1">화요웹툰</span>
+            <span id="c1">웹툰</span>
             <span id="c2">인기순</span>
             <span id="c3">업데이트순</span>
             <span id="c4">조회순</span>
             <span id="c5">별점순</span>
         </div>
         <div class="comic-list">    
-            <div class="wrap">
-                <div id="d1">
-                    <img src="잔불의 기사.jpg" alt="잔불의 기사">
-                    <div id="exp1">
-                        <span class="title">잔불의 기사</span>
-                        <span class="author">글-그림:환댕</span>
-                    </div>
+            <div id="d1">
+                <img class="cover" src="잔불의 기사.jpg" alt="잔불의 기사">
+                <div id="exp1">
+                    <span class="title">잔불의 기사</span>
+                    <span class="author">글-그림:환댕</span>
                 </div>
-                <div id="d2">
-                    <img src="별이삼샵.webp" alt="별이삼샵">
-                    <div id="exp2">
-                        <span class="title">별이삼샵</span>
-                        <span class="author">글-그림:혀노</span>
-                    </div>
+            </div>
+            <div id="d2">
+                <img class="cover" src="별이삼샵.webp" alt="별이삼샵">
+                <div id="exp2">
+                    <span class="title">별이삼샵</span>
+                    <span class="author">글-그림:혀노</span>
                 </div>
-                <div id="d3">
-                    <img src="연애혁명.webp" alt="연애혁명">
-                    <div id="exp3">
-                        <span class="title">연애혁명</span>
-                        <span class="author">글-그림:232</span>
-                    </div>
+            </div>
+            <div id="d3">
+                <img class="cover" src="연애혁명.webp" alt="연애혁명">
+                <div id="exp3">
+                    <span class="title">연애혁명</span>
+                    <span class="author">글-그림:232</span>
                 </div>
-                <div id="d4">
-                    <img src="미드우트.jpg" alt="미드우트">
-                    <div id="exp4">
-                        <span class="title">미드우트</span>
-                        <span class="author">글-그림:원김</span>
-                    </div>
+            </div>
+            <div id="d4">
+                <img class="cover" src="미드우트.jpg" alt="미드우트">
+                <div id="exp4">
+                    <span class="title">미드우트</span>
+                    <span class="author">글-그림:원김</span>
                 </div>
-                <div id="d5">
-                    <img src="시든 꽃에 눈물을.webp" alt="시든 꽃에 눈물을">
-                    <div id="exp5">
-                        <span class="title">시든 꽃에 눈물을</span>
-                        <span class="author">글-그림:개</span>
-                    </div>
+            </div>
+            <div id="d5">
+                <img class="cover" src="시든 꽃에 눈물을.webp" alt="시든 꽃에 눈물을">
+                <div id="exp5">
+                    <span class="title">시든 꽃에 눈물을</span>
+                    <span class="author">글-그림:개</span>
                 </div>
             </div>
         </div>
-        <div class="advert"><img class="advert" src="제목 없는 디자인.png" alt=""></div>
+        <div class="advert"><img class="advert" src="광고.png" alt=""></div>
         <div class="gnere">
             <div id="s-gnere">장르</div>
             <div class="ss-gnere">
@@ -100,6 +98,9 @@
             <div id="f3"></div>
             <div id="f4"></div>
             <div id="f5"></div>
+        </div>
+        <div class="chart">
+            
         </div>
         <script>
         const items = document.querySelectorAll('#a1, #a2, #a3');
