@@ -1,223 +1,190 @@
-*{
+:root {
+    --green: #00DC64;
+    --gray: gray;
+    --line: rgb(187, 187, 187);
+}
+
+* {
     padding: 0;
     margin: 0;
     cursor: default;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-hr{
+hr {
     width: 100%;
     height: 1px;
-    background-color: rgb(187, 187, 187);
+    background-color: var(--line);
     border: none;
 }
 
-.top{
+.section {
     width: 65%;
-    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.mid{
-    width: 65%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.tab {
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-.bottom{
-    width: 65%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.head{
+.head {
     height: 60px;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-#a1,#a2, #a3{
-    color: gray;
-    cursor: pointer;
+.prong {
+    display: flex;
+    align-items: center;
+}
+
+.prong > span {
+    color: var(--gray);
+}
+
+.tab-main {
+    color: var(--gray);
     font-size: 20px;
 }
 
-#a1.active,#a2.active, #a3.active{
+.tab-main.active {
     color: black;
-    transition: 0.3s;
 }
 
-.head > div > span{
-    color: gray;
-}
-
-.prong{
-    display: flex;
-    align-items: center;
-    transition: 0.3s;
-}
-
-hr{
-    color: rgb(187, 187, 187);
-}
-
-.sub-prong{
+.sub-prong {
     display: flex;
     height: 55px;
     align-items: center;
-    transition: 0.2s;
 }
 
-#b1{
+.tab-sub {
     width: 55px;
     height: 100%;
-    justify-content: center;
     display: flex;
     align-items: center;
-}
-
-#b2, #b3{
-    width: 55px;
-    height: 100%;
     justify-content: center;
-    display: flex;
-    align-items: center;
 }
 
-#b4, #b5 ,#b6{
+.tab-sub--wide {
     width: 80px;
-    height: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
 }
 
-#b1.active, #b2.active, #b3.active, #b4.active, #b5.active, #b6.active{
+.tab-sub.active {
     color: white;
-    background-color: #00DC64;
-    transition: 0.2s;
+    background-color: var(--green);
 }
 
-.todaycomic{
+.todaycomic {
     display: flex;
-    gap : 10px;
-    margin: 15px 0px 15px 0px;
+    gap: 10px;
+    margin: 15px 0;
     align-items: center;
 }
 
-#c1{
+.todaycomic-title {
     font-size: 20px;
     font-weight: bold;
 }
 
-#c2, #c3, #c4, #c5, #c6{
-    cursor: pointer;
-    transition: 0.2s;
+.tab-sort.active {
+    color: var(--green);
 }
 
-#c2.active, #c3.active, #c4.active, #c5.active{
-    color: #00DC64;
-}
-
-.comic-list{
+.comic-list {
     display: flex;
-    margin-bottom: 30px;
     align-items: center;
     justify-content: space-between;
-    margin: 0px;
+    list-style: none;
 }
 
-img{
+.cover {
     width: 230px;
     height: 300px;
     border-radius: 5px;
     object-fit: cover;
+    transition: transform 0.3s;
 }
 
-.cover:hover{
+.cover:hover {
     transform: scale(1.03);
-    transition: 0.3s;
 }
 
-.wrap{
+.comic-info {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.title{
+.title {
     font-size: 16px;
     font-weight: 500;
 }
 
-.title:hover{
-    text-decoration: underline;
-}
-
-.author{
+.author {
     font-size: 14px;
     color: #000;
 }
 
-.author:hover{
+.title:hover,
+.author:hover {
     text-decoration: underline;
 }
 
-#exp1, #exp2, #exp3, #exp4, #exp5{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.advert{
+.advert {
     width: 100%;
     height: 100px;
-    margin-top: 20px;
-    margin-bottom: 45px;
+    margin: 20px 0 45px;
 }
 
-.gnere{
+.advert img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.genre {
     display: flex;
     flex-direction: column;
 }
 
-#s-gnere{
+.genre-title {
     font-size: 20px;
     font-weight: bold;
 }
 
-.ss-gnere{
+.genre-list {
     display: flex;
     align-items: center;
+    list-style: none;
 }
 
-#e1, #e2, #e3, #e4, #e5, #e6, #e7, #e8, #e9, #e10{
-    color:  gray;
-    transition: 0.2s;
-}
-
-.ss-gnere >  div,.ss-gnere > span{
+.genre-list li {
+    display: flex;
+    align-items: center;
     margin-right: 4px;
 }
 
-#e1.active, #e2.active, #e3.active, #e4.active, #e5.active, #e6.active, #e7.active, #e8.active, #e9.active, #e10.active{
-    color: #00DC64;
-    background-color: white;
-    transition: 0.2s;
+.genre-list li:not(:last-child)::after {
+    content: "·";
+    color: var(--gray);
+    margin-left: 4px;
 }
 
-.dot{
-    color: gray;
+.tab-genre {
+    color: var(--gray);
+}
+
+.tab-genre.active {
+    color: var(--green);
+    background-color: white;
 }

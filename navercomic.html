@@ -5,158 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>네이버웹툰</title>
     <link rel="stylesheet" href="navercomic.css">
+    <script src="navercomic.js" defer></script>
 </head>
 <body>
-    <div class="top">
+    <header class="section">
         <div class="head">
-            <div class="prong">
-                <h3 id="a1">네이버웹툰</h3>
+            <div class="prong" data-tabs data-initial="0" role="tablist">
+                <h3 class="tab tab-main" role="tab">네이버웹툰</h3>
                 <span>|</span>
-                <h3 id="a2">웹소설</h3>
+                <h3 class="tab tab-main" role="tab">웹소설</h3>
                 <span>|</span>
-                <h3 id="a3">시리즈</h3>
+                <h3 class="tab tab-main" role="tab">시리즈</h3>
             </div>
         </div>
-    </div>
+    </header>
     <hr>
-    <div class="mid">
-        <div class="sub-prong">
-            <div id="b1">홈</div>
-            <div id="b2">웹툰</div>
-            <div id="b3">컷츠</div>
-            <div id="b4">베스트도전</div>
-            <div id="b5">도전만화</div>
-            <div id="b6">마이페이지</div>
+    <nav class="section">
+        <div class="sub-prong" data-tabs data-initial="0" role="tablist">
+            <div class="tab tab-sub" role="tab">홈</div>
+            <div class="tab tab-sub" role="tab">웹툰</div>
+            <div class="tab tab-sub" role="tab">컷츠</div>
+            <div class="tab tab-sub tab-sub--wide" role="tab">베스트도전</div>
+            <div class="tab tab-sub tab-sub--wide" role="tab">도전만화</div>
+            <div class="tab tab-sub tab-sub--wide" role="tab">마이페이지</div>
         </div>
-    </div>
+    </nav>
     <hr>
-    <div class="bottom">
-        <div class="todaycomic">
-            <span id="c1">웹툰</span>
-            <span id="c2">인기순</span>
-            <span id="c3">업데이트순</span>
-            <span id="c4">조회순</span>
-            <span id="c5">별점순</span>
+    <main class="section">
+        <div class="todaycomic" data-tabs role="tablist">
+            <span class="todaycomic-title">웹툰</span>
+            <span class="tab tab-sort" role="tab">인기순</span>
+            <span class="tab tab-sort" role="tab">업데이트순</span>
+            <span class="tab tab-sort" role="tab">조회순</span>
+            <span class="tab tab-sort" role="tab">별점순</span>
         </div>
-        <div class="comic-list">    
-            <div id="d1">
-                <img class="cover" src="잔불의 기사.jpg" alt="잔불의 기사">
-                <div id="exp1">
+
+        <ul class="comic-list">
+            <li>
+                <img class="cover" src="잔불의 기사.jpg" alt="잔불의 기사" width="230" height="300">
+                <div class="comic-info">
                     <span class="title">잔불의 기사</span>
                     <span class="author">글-그림:환댕</span>
                 </div>
-            </div>
-            <div id="d2">
-                <img class="cover" src="별이삼샵.webp" alt="별이삼샵">
-                <div id="exp2">
+            </li>
+            <li>
+                <img class="cover" src="별이삼샵.webp" alt="별이삼샵" width="230" height="300">
+                <div class="comic-info">
                     <span class="title">별이삼샵</span>
                     <span class="author">글-그림:혀노</span>
                 </div>
-            </div>
-            <div id="d3">
-                <img class="cover" src="연애혁명.webp" alt="연애혁명">
-                <div id="exp3">
+            </li>
+            <li>
+                <img class="cover" src="연애혁명.webp" alt="연애혁명" width="230" height="300">
+                <div class="comic-info">
                     <span class="title">연애혁명</span>
                     <span class="author">글-그림:232</span>
                 </div>
-            </div>
-            <div id="d4">
-                <img class="cover" src="미드우트.jpg" alt="미드우트">
-                <div id="exp4">
+            </li>
+            <li>
+                <img class="cover" src="미드우트.jpg" alt="미드우트" width="230" height="300">
+                <div class="comic-info">
                     <span class="title">미드우트</span>
                     <span class="author">글-그림:원김</span>
                 </div>
-            </div>
-            <div id="d5">
-                <img class="cover" src="시든 꽃에 눈물을.webp" alt="시든 꽃에 눈물을">
-                <div id="exp5">
+            </li>
+            <li>
+                <img class="cover" src="시든 꽃에 눈물을.webp" alt="시든 꽃에 눈물을" width="230" height="300">
+                <div class="comic-info">
                     <span class="title">시든 꽃에 눈물을</span>
                     <span class="author">글-그림:개</span>
                 </div>
-            </div>
-        </div>
-        <div class="advert"><img class="advert" src="광고.png" alt=""></div>
-        <div class="gnere">
-            <div id="s-gnere">장르</div>
-            <div class="ss-gnere">
-                <div id="e1">로맨스</div><span class="dot">·</span>
-                <div id="e2">판타지</div><span class="dot">·</span>
-                <div id="e3">액션</div><span class="dot">·</span>
-                <div id="e4">일상</div><span class="dot">·</span>
-                <div id="e5">스릴러</div><span class="dot">·</span>
-                <div id="e6">개그</div><span class="dot">·</span>
-                <div id="e7">무협</div><span class="dot">·</span>
-                <div id="e8">드라마</div><span class="dot">·</span>
-                <div id="e9">감성</div><span class="dot">·</span>
-                <div id="e10">스포츠</div>
-            </div>
-        </div>
-        <div class="rank">
-            <div id="f1"></div>
-            <div id="f2"></div>
-            <div id="f3"></div>
-            <div id="f4"></div>
-            <div id="f5"></div>
-        </div>
-        <div class="chart">
-            <div class="s-chart">
-            <div class="ss-chart"></div>
-            </div>
-            <div class="s-chart">
-            <div class="ss-chart"></div>
-            </div>
-            <div class="s-chart">
-            <div class="ss-chart"></div>
-            </div>
-            <div class="s-chart">
-            <div class="ss-chart"></div>
-            </div>
-            <div class="s-chart">
-            <div class="ss-chart"></div>
-            </div>
-        </div>
-        <script>
-        const items = document.querySelectorAll('#a1, #a2, #a3');
-        items[0].classList.add('active');
+            </li>
+        </ul>
 
-        items.forEach(item => {
-            item.addEventListener('click', function() {
-                items.forEach(el => {
-                    el.classList.remove('active');
-                });
-                this.classList.add('active');
-            });
-        });
-        
-        const articles = document.querySelectorAll(
-            '#b1, #b2, #b3, #b4, #b5, #b6'
-        );
+        <aside class="advert">
+            <img src="광고.png" alt="광고" loading="lazy">
+        </aside>
 
-        document.querySelector('#b1').classList.add('active');
-
-        articles.forEach(item => {
-            item.addEventListener('click', () => {
-                articles.forEach(el => el.classList.remove('active'));
-                item.classList.add('active');
-            });
-        });
-            
-        const objects = document.querySelectorAll('#c2, #c3, #c4, #c5');
-        objects.forEach(item => {
-            item.addEventListener('click', () => {
-                objects.forEach(el => el.classList.remove('active'));
-                item.classList.add('active');
-            });
-        });
-
-        const gnere = document.querySelectorAll('#e1, #e2, #e3, #e4, #e5, #e6, #e7, #e8, #e9, #e10');
-        gnere.forEach(item => {
-            item.addEventListener('click', () => {
-                gnere.forEach(el => el.classList.remove('active'));
-                item.classList.add('active');
-            });
-        });
-        </script>
-    </div>
+        <section class="genre">
+            <h2 class="genre-title">장르</h2>
+            <ul class="genre-list" data-tabs role="tablist">
+                <li><span class="tab tab-genre" role="tab">로맨스</span></li>
+                <li><span class="tab tab-genre" role="tab">판타지</span></li>
+                <li><span class="tab tab-genre" role="tab">액션</span></li>
+                <li><span class="tab tab-genre" role="tab">일상</span></li>
+                <li><span class="tab tab-genre" role="tab">스릴러</span></li>
+                <li><span class="tab tab-genre" role="tab">개그</span></li>
+                <li><span class="tab tab-genre" role="tab">무협</span></li>
+                <li><span class="tab tab-genre" role="tab">드라마</span></li>
+                <li><span class="tab tab-genre" role="tab">감성</span></li>
+                <li><span class="tab tab-genre" role="tab">스포츠</span></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
